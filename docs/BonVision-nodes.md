@@ -1,16 +1,11 @@
 # BonVision nodes
 
 There are _5_ types of BonVision nodes: 
-1. [**Primitives**](https://github.com/amansaleem/BonVision/wiki/BonVision-nodes#1-primitives)
-: These are the nodes that define fundamental visual stimulus characteristics.
-2. [**RigInfo** (to be renamed **Environment**)](https://github.com/amansaleem/BonVision/wiki/BonVision-nodes#2-environment)
-: These define the aspects of the visual display devices.
-3. [**Collections**](https://github.com/amansaleem/BonVision/wiki/BonVision-nodes#3-collections)
-: These are nodes that define visual stimuli that comprise a collection of **Primitives**.
-4. [**Logging**](https://github.com/amansaleem/BonVision/wiki/BonVision-nodes#4-logging)
-: These are nodes to help keep log of stimulus parameters for analysis
-5. [_Generic_](https://github.com/amansaleem/BonVision/wiki/BonVision-nodes#5-generic)
-: These are generic helper nodes
+1. [**Primitives**](https://github.com/amansaleem/BonVision/wiki/BonVision-nodes#1-primitives): These are the nodes that define fundamental visual stimulus characteristics.
+2. [**RigInfo** (to be renamed **Environment**)](https://github.com/amansaleem/BonVision/wiki/BonVision-nodes#2-environment): These define the aspects of the visual display devices.
+3. [**Collections**](https://github.com/amansaleem/BonVision/wiki/BonVision-nodes#3-collections): These are nodes that define visual stimuli that comprise a collection of **Primitives**.
+4. [**Logging**](https://github.com/amansaleem/BonVision/wiki/BonVision-nodes#4-logging): These are nodes to help keep log of stimulus parameters for analysis
+5. [_Generic_](https://github.com/amansaleem/BonVision/wiki/BonVision-nodes#5-generic): These are generic helper nodes
 ***
 
 ## 1. Primitives
