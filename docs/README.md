@@ -1,31 +1,28 @@
-# BonVision
+# Welcome to the BonVision wiki!
 
-BonVision is a common workflow template and set of extensions, shaders and resources for quickly designing visual stimulation experiments in Bonsai. It also provides operators for generating parametric trial sequences, event logging, and gamma correction.
 
-## Getting started
+### BonVision is an open-source closed-loop visual stimulus generator developed by the [Saleem Lab](www.saleemlab.com) and [Solomon Lab](www.solomonlab.info) at the [UCL Institute of Behavioural Neuroscience](http://www.ibn.ucl.ac.uk/) in collaboration with [NeuroGears](https://neurogears.org/).
 
-1. BonVision is currently built on top of the 2.4-preview release of Bonsai. You can download this release from the [official Bonsai website](https://bonsai-rx.org).
-2. Install the `Bonsai.Numerics` package.
-3. Open the `BonVision.bonsai` workflow to get started.
-4. *** Required extensions of Bonsai to added
+### BonVision's key features include:
+* Naturally closed-loop system based on reactive coding of the Bonsai framework
+* Handles 2D and 3D stimuli with equal ease
+* Display independent stimulus generation
+* Graphical programming language of the Bonsai framework
+* Can be used for Augmented Reality, Virtual Reality of 2D visual stimuli
 
-## Extensions
+***
+## Resources:
+[Installation instructions](https://github.com/amansaleem/BonVision/wiki/Requirements-&-Installation)
 
-The following extensions are currently available in BonVision:
+[Description of BonVision nodes, Documentation](https://github.com/amansaleem/BonVision/wiki/BonVision-nodes)
 
-* `DrawGratings`: Draws parameterized 2D sinewave gratings, with support for interactive manipulation of spatio-temporal frequency, angle, location, size, envelope, etc.
-* `DrawCheckerboard`: Draws parameterized checkerboards, with support for interactive manipulation of number of columns, rows, and grid phase used for flickering stimuli.
-* `DrawImage`: Draws an affine transformed 2D image. Textures need to be added to the Shader configuration window first. Double-click on the `RenderFrame` node at the top and select the `Textures` tab. You can drag-and-drop arbitrary image files to the window. This operator also supports interactive manipulation of location, size, etc.
-* `GammaCorrection`: Renders the current scene to a texture and applies gamma correction as a post-processing effect using a look-up table specified via an external image file.
-* `MeshMapping`: Renders the current scene to a texture and applies mesh mapping and brightness correction as a post-processing effect using a mesh grid specified via an external calibration file.
-* `ParameterRange`: Generates a sequence of parameter values between a specified min and max range. This operator can be useful for automating generation of parameterized trial sequences.
-* `RangeAnimation`: Animates a sequence of parameter values between a min and max range at the specified cycles per second. This operator can be useful to specify continuous changes in parameter values.
-* `GratingsSpecification`: Creates a sequence of grating parameters used for stimulus presentation. This operator can be useful for specifying parametric trial sequences.
-* `LogEvent`: Logs the specified value into the common event file. This operator can be used for keeping a general record of session events in chronological order.
+Creating basic Stimuli
 
-## Examples
+Setting up the the Visual Displays
 
-* 'HandMapping'
-* 'DirectionTuning'
-* 'ContrastTuning'
+Step-by-step instructions to:
+* Generate a direction tuning experiment
+* Generate a simple 2AFC experiment
+* Generate a Virtual Environment
 
+***
