@@ -1,7 +1,7 @@
 # Welcome to the BonVision wiki!
 
 
-### BonVision is an open-source closed-loop visual stimulus generator developed by the [Saleem Lab](www.saleemlab.com) and [Solomon Lab](www.solomonlab.info) at the [UCL Institute of Behavioural Neuroscience](http://www.ibn.ucl.ac.uk/) in collaboration with [NeuroGears](https://neurogears.org/).
+BonVision is an open-source closed-loop visual stimulus generator developed by the [Saleem Lab](www.saleemlab.com) and [Solomon Lab](www.solomonlab.info) at the [UCL Institute of Behavioural Neuroscience](http://www.ibn.ucl.ac.uk/) in collaboration with [NeuroGears](https://neurogears.org/).
 
 ### BonVision's key features include:
 * Naturally closed-loop system based on reactive coding of the Bonsai framework
