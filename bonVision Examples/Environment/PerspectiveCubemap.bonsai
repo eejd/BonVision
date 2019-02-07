@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WorkflowBuilder Version="2.4.0-preview">
+  <Workflow xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:q2="clr-namespace:Bonsai.Scripting;assembly=Bonsai.Scripting" xmlns:q1="clr-namespace:Bonsai.Shaders;assembly=Bonsai.Shaders" xmlns="https://bonsai-rx.org/2018/workflow">
+    <Nodes>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="q1:CreateWindow">
+          <q1:Width>640</q1:Width>
+          <q1:Height>480</q1:Height>
+          <q1:VSync>On</q1:VSync>
+          <q1:SwapSync>false</q1:SwapSync>
+          <q1:ClearColor>Gray</q1:ClearColor>
+          <q1:ClearMask>DepthBufferBit ColorBufferBit</q1:ClearMask>
+          <q1:CursorVisible>true</q1:CursorVisible>
+          <q1:Location xsi:nil="true" />
+          <q1:WindowBorder>Resizable</q1:WindowBorder>
+          <q1:WindowState>Normal</q1:WindowState>
+          <q1:DisplayDevice>Primary</q1:DisplayDevice>
+          <q1:TargetRenderFrequency>0</q1:TargetRenderFrequency>
+          <q1:RenderState />
+          <q1:GraphicsMode>
+            <q1:ColorFormat>
+              <q1:Red>8</q1:Red>
+              <q1:Green>8</q1:Green>
+              <q1:Blue>8</q1:Blue>
+              <q1:Alpha>8</q1:Alpha>
+            </q1:ColorFormat>
+            <q1:Depth>16</q1:Depth>
+            <q1:Stencil>0</q1:Stencil>
+            <q1:Samples>0</q1:Samples>
+            <q1:AccumulatorFormat>
+              <q1:Red>0</q1:Red>
+              <q1:Green>0</q1:Green>
+              <q1:Blue>0</q1:Blue>
+              <q1:Alpha>0</q1:Alpha>
+            </q1:AccumulatorFormat>
+            <q1:Buffers>2</q1:Buffers>
+            <q1:Stereo>false</q1:Stereo>
+          </q1:GraphicsMode>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="q1:LoadResources" />
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="q1:RenderFrame" />
+      </Expression>
+      <Expression xsi:type="PublishSubject">
+        <Name>DrawStimuli3D</Name>
+      </Expression>
+      <Expression xsi:type="SubscribeSubject">
+        <Name>DrawStimuli3D</Name>
+      </Expression>
+      <Expression xsi:type="PublishSubject">
+        <Name>DrawStimuli</Name>
+      </Expression>
+      <Expression xsi:type="SubscribeSubject">
+        <Name>DrawStimuli</Name>
+      </Expression>
+      <Expression xsi:type="SubscribeSubject">
+        <Name>DrawStimuli</Name>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="q1:RenderTexture">
+          <q1:RenderState />
+          <q1:ClearColor>Black</q1:ClearColor>
+          <q1:ClearMask>DepthBufferBit ColorBufferBit</q1:ClearMask>
+          <q1:Width xsi:nil="true" />
+          <q1:Height xsi:nil="true" />
+          <q1:WrapS>Repeat</q1:WrapS>
+          <q1:WrapT>Repeat</q1:WrapT>
+          <q1:MinFilter>Linear</q1:MinFilter>
+          <q1:MagFilter>Linear</q1:MagFilter>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="q1:BindTexture">
+          <q1:TextureSlot>Texture0</q1:TextureSlot>
+          <q1:ShaderName>TexturedModel</q1:ShaderName>
+          <q1:TextureTarget>Texture2D</q1:TextureTarget>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="q1:RenderCubemap">
+          <q1:RenderState />
+          <q1:ClearColor>Gray</q1:ClearColor>
+          <q1:ClearMask>DepthBufferBit ColorBufferBit</q1:ClearMask>
+          <q1:FaceSize xsi:nil="true" />
+          <q1:InternalFormat>Rgb</q1:InternalFormat>
+          <q1:MinFilter>Linear</q1:MinFilter>
+          <q1:MagFilter>Linear</q1:MagFilter>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="q1:CreateCubemapCamera">
+          <q1:Eye>
+            <q1:X>0</q1:X>
+            <q1:Y>0</q1:Y>
+            <q1:Z>0</q1:Z>
+          </q1:Eye>
+          <q1:NearClip>0.1</q1:NearClip>
+          <q1:FarClip>1000</q1:FarClip>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="q2:ExpressionTransform">
+        <q2:Expression>new(
+ViewMatrix as ViewMatrix,
+ProjectionMatrix as ProjectionMatrix,
+ViewMatrix.Row3.Yzw as Light)</q2:Expression>
+      </Expression>
+      <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.PrimitiveResources.bonsai" />
+      <Expression xsi:type="IncludeWorkflow" Path="BonVision:Environment.NormalizedViewport.bonsai" />
+      <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawCheckerboard.bonsai">
+        <NumberColumns>3</NumberColumns>
+        <NumberRows>3</NumberRows>
+        <Phase>0</Phase>
+        <ExtentX>1</ExtentX>
+        <ExtentY>1</ExtentY>
+        <LocationX>0</LocationX>
+        <LocationY>0</LocationY>
+        <Angle>0</Angle>
+      </Expression>
+      <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawGratings.bonsai">
+        <ExtentX>1</ExtentX>
+        <ExtentY>1</ExtentY>
+        <LocationX>0</LocationX>
+        <LocationY>0</LocationY>
+        <Angle>-30</Angle>
+        <SpatialFrequency>10</SpatialFrequency>
+        <TemporalFrequency>0</TemporalFrequency>
+        <SquareWave>false</SquareWave>
+        <Contrast>1</Contrast>
+        <Radius>1</Radius>
+        <Edge>0.2</Edge>
+        <Opacity>1</Opacity>
+      </Expression>
+      <Expression xsi:type="IncludeWorkflow" Path="BonVision:Environment.ViewingWindow.bonsai">
+        <Width>20</Width>
+        <Height>15</Height>
+        <Rotation>
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+        </Rotation>
+        <Translation>
+          <X>0</X>
+          <Y>0</Y>
+          <Z>-10</Z>
+        </Translation>
+      </Expression>
+      <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
+        <TranslationX>-0.6</TranslationX>
+        <TranslationY>0</TranslationY>
+        <TranslationZ>-2</TranslationZ>
+        <RotationZ>0</RotationZ>
+        <RotationY>0.7</RotationY>
+        <RotationX>0.808726847</RotationX>
+        <ScaleX>1</ScaleX>
+        <ScaleY>1</ScaleY>
+        <ScaleZ>1</ScaleZ>
+        <MeshName>Plane</MeshName>
+        <Ambient>
+          <X>0.2</X>
+          <Y>0.2</Y>
+          <Z>0.2</Z>
+        </Ambient>
+        <Diffuse>
+          <X>0.8</X>
+          <Y>0.8</Y>
+          <Z>0.8</Z>
+        </Diffuse>
+        <Specular>
+          <X>0.8</X>
+          <Y>0.8</Y>
+          <Z>0.8</Z>
+        </Specular>
+        <SpecularExponent>10</SpecularExponent>
+      </Expression>
+      <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
+        <TranslationX>0.6</TranslationX>
+        <TranslationY>0</TranslationY>
+        <TranslationZ>-2</TranslationZ>
+        <RotationZ>0</RotationZ>
+        <RotationY>-0.7</RotationY>
+        <RotationX>0.808726847</RotationX>
+        <ScaleX>1</ScaleX>
+        <ScaleY>1</ScaleY>
+        <ScaleZ>1</ScaleZ>
+        <MeshName>Plane</MeshName>
+        <Ambient>
+          <X>0.2</X>
+          <Y>0.2</Y>
+          <Z>0.2</Z>
+        </Ambient>
+        <Diffuse>
+          <X>0.8</X>
+          <Y>0.8</Y>
+          <Z>0.8</Z>
+        </Diffuse>
+        <Specular>
+          <X>0.8</X>
+          <Y>0.8</Y>
+          <Z>0.8</Z>
+        </Specular>
+        <SpecularExponent>10</SpecularExponent>
+      </Expression>
+    </Nodes>
+    <Edges>
+      <Edge From="0" To="13" Label="Source1" />
+      <Edge From="2" To="14" Label="Source1" />
+      <Edge From="3" To="10" Label="Source1" />
+      <Edge From="4" To="18" Label="Source1" />
+      <Edge From="4" To="19" Label="Source1" />
+      <Edge From="5" To="8" Label="Source1" />
+      <Edge From="6" To="15" Label="Source1" />
+      <Edge From="7" To="16" Label="Source1" />
+      <Edge From="8" To="9" Label="Source1" />
+      <Edge From="9" To="11" Label="Source1" />
+      <Edge From="10" To="17" Label="Source1" />
+      <Edge From="11" To="12" Label="Source1" />
+      <Edge From="12" To="3" Label="Source1" />
+      <Edge From="13" To="1" Label="Source1" />
+      <Edge From="14" To="5" Label="Source1" />
+    </Edges>
+  </Workflow>
+  <ExtensionTypes>
+    <Type>Bonsai.Shaders.CreateWindow, Bonsai.Shaders, Version=0.19.0.0, Culture=neutral, PublicKeyToken=null</Type>
+    <Type>Bonsai.Shaders.LoadResources, Bonsai.Shaders, Version=0.19.0.0, Culture=neutral, PublicKeyToken=null</Type>
+    <Type>Bonsai.Shaders.RenderFrame, Bonsai.Shaders, Version=0.19.0.0, Culture=neutral, PublicKeyToken=null</Type>
+    <Type>Bonsai.Shaders.RenderTexture, Bonsai.Shaders, Version=0.19.0.0, Culture=neutral, PublicKeyToken=null</Type>
+    <Type>Bonsai.Shaders.BindTexture, Bonsai.Shaders, Version=0.19.0.0, Culture=neutral, PublicKeyToken=null</Type>
+    <Type>Bonsai.Shaders.RenderCubemap, Bonsai.Shaders, Version=0.19.0.0, Culture=neutral, PublicKeyToken=null</Type>
+    <Type>Bonsai.Shaders.CreateCubemapCamera, Bonsai.Shaders, Version=0.19.0.0, Culture=neutral, PublicKeyToken=null</Type>
+    <Type>Bonsai.Scripting.ExpressionTransform, Bonsai.Scripting, Version=2.4.0.0, Culture=neutral, PublicKeyToken=null</Type>
+  </ExtensionTypes>
+</WorkflowBuilder>
