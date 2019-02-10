@@ -15,7 +15,7 @@ BonVision is an open-source closed-loop visual environment generator developed b
 ## Resources
 [Installation instructions](Requirements-&-Installation)
 
-[Documentation for BonVision nodes](BonVision-nodes)
+[Documentation for BonVision nodes](_documentation/BonVision-nodes)
 
 [Forums](https://groups.google.com/forum/#!forum/bonsai-users): We will be using the Bonsai google forum for BonVision discussions, as some issues can be overlapping and related to the Bonsai framework rather than the specifics of BonVision.
 
