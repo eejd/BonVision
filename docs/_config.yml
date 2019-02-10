@@ -1,3 +1,31 @@
-theme: jekyll-theme-slate
-#remote-theme: benbalter/retlab
-#remote-theme: arnp/herring-cove
+name: Bon Vision
+author: Aman Saleem
+baseurl: /BonVision
+description: theme for jekyll
+github: http://www.github.com/amansaleem/BonVision
+twitter: http://www.twitter.com/
+facebook: http://www.facebook.com
+linkedin: http://www.linkedin.com
+#email: rnpatel[at]me.com
+location: 42°2'16"N   70°12'47"W
+#disqus: diqus-username
+
+##Make sure to edit the above fields, especially for disqus.
+
+
+highlighter: pygments
+markdown: redcarpet
+redcarpet:
+  extensions: ["tables"]
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
