@@ -6,6 +6,9 @@ theme: jekyll-theme-slate
 include:
   - .htaccess
   - _pages
+  - _Demos
+  - _Documentation
+  - _Tutorials
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
