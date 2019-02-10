@@ -2,87 +2,9 @@
 remote-theme: benbalter/retlab
 #remote-theme: arnp/herring-cove
 
-# Reading Files
-include:
-  - .htaccess
-  - _pages
-  - _demosemos
-  - _documentation
-  - _tutorials
-
-# Outputting
-permalink: /:categories/:title/
-paginate: 5 # amount of demos to show
-paginate_path: /page:num/
-timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
-
-# Plugins
-gems:
-  - jekyll-redirect-from
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-
-# mimic GitHub Pages with --safe
-whitelist:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
+plugins:
+  - jekyll-relative-links
   
-  
-  tag_archive:
-  type: liquid
-  path: /tags/
-  
-  
-  # Collections
-collections:
-  docs:
-    output: true
-    permalink: /:collection/:path/
-  tutorials:
-    output: true
-    permalink: /:collection/:path/
-
-# Defaults
-defaults:
-  # _demos
-  - scope:
-      path: ""
-      type: demos
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: # true
-      share: true
-      related: true
-  # _documentation
-  - scope:
-      path: ""
-      type: documentation
-    values:
-      layout: single
-      read_time: false
-      author_profile: false
-      share: false
-      comments: false
-      sidebar:
-        nav: "documentation"
-  # _tutorials
-  - scope:
-      path: ""
-      type: tutorials
-    values:
-      layout: single
-      read_time: false
-      author_profile: false
-      share: false
-      comments: false
-      sidebar:
-        nav: "docs"
+ relative_links:
+  enabled:     true
+  collections: true
