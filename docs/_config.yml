@@ -279,17 +279,60 @@ compress_html:
   ignore:
     envs: development
 
+# Collections
+collections:
+  documentation:
+    output: true
+    permalink: /:collection/:path/
+  tutorials:
+    output: true
+    permalink: /:collection/:path/
+  demos:
+    output: true
+    permalink: /:collection/:path/
+  
 
 # Defaults
 defaults:
-  # _posts
+# _home
   - scope:
       path: ""
-      type: posts
+      type: home
     values:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
+  # _documentation
+  - scope:
+      path: "_documentation"
+      type: documentation
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _tutorials
+  - scope:
+      path: "_tutorials"
+      type: tutorials
+    values:
+      layout: single
+      author_profile: true
+  # _demos
+  - scope:
+      path: "_demos"
+      type: demos
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "docs"
+
