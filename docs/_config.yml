@@ -7,11 +7,11 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Bonsai"
+title                    : "bonVision"
 title_separator          : "-"
-name                     : "NeuroGEARS"
-description              : "A visual language for reactive programming."
-url                      : https://bonsai-rx.org/
+name                     : ""
+description              : ""
+url                      : https://amansaleem.github.io/BonVision/
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -55,7 +55,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : bonsai_rx
+  username               : 
 facebook:
   username               :
   app_id                 :
@@ -77,19 +77,19 @@ analytics:
 
 # Site Author
 author:
-  name             : "NeuroGEARS"
+  name             : ""
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Augmenting brains through technology."
+  bio              : ""
   location         : "Somewhere"
   email            :
   uri              :
-  bitbucket        : horizongir/bonsai
+  bitbucket        : 
   codepen          :
   dribbble         :
   flickr           :
   facebook         :
   foursquare       :
-  github           : bonsai-rx
+  github           : 
   google_plus      :
   keybase          :
   instagram        :
@@ -100,7 +100,7 @@ author:
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          : bonsai_rx
+  twitter          : 
   vine             :
   weibo            :
   xing             :
@@ -253,10 +253,10 @@ defaults:
       comments: # true
       share: true
       related: true
-  # _docs
+  # _documentation
   - scope:
       path: ""
-      type: docs
+      type: documentation
     values:
       layout: single
       read_time: false
@@ -264,11 +264,11 @@ defaults:
       share: false
       comments: false
       sidebar:
-        nav: "docs"
-  # _operators
+        nav: "documentation"
+  # _tutorials
   - scope:
       path: ""
-      type: operators
+      type: tutorials
     values:
       layout: single
       read_time: false
@@ -276,4 +276,4 @@ defaults:
       share: false
       comments: false
       sidebar:
-        nav: "docs"
+        nav: "turorials"
