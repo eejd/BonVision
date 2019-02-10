@@ -22,7 +22,7 @@ name                     : "Aman Saleem"
 description              : "Support site for bonVision"
 url                      : "https://amansaleem.github.io/BonVision/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "amansaleem/BonVision"# GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "amansaleem/BonVision" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "https://github.com/amansaleem/BonVision/blob/master/docs/Images/logoBasic2D-01.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : "bon Vision" # overrides the website title displayed in the masthead, use " " for no title
@@ -83,7 +83,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               : "aman_sal"
+  username               : #"aman_sal"
 facebook:
   username               :
   app_id                 :
@@ -108,7 +108,7 @@ analytics:
 author:
   name             : "Aman Saleem"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : ""
+  bio              : #""
   location         : "UCL, London"
   email            : 
   links:
@@ -294,17 +294,6 @@ collections:
 
 # Defaults
 defaults:
-# _home
-  - scope:
-      path: ""
-      type: home
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
   # _documentation
   - scope:
       path: "_documentation"
@@ -316,6 +305,8 @@ defaults:
       comments: true
       share: true
       related: true
+      sidebar:
+        nav: "docs"
   # _tutorials
   - scope:
       path: "_tutorials"
@@ -323,6 +314,8 @@ defaults:
     values:
       layout: single
       author_profile: true
+      sidebar:
+        nav: "docs"
   # _demos
   - scope:
       path: "_demos"
@@ -333,6 +326,5 @@ defaults:
       author_profile: false
       share: false
       comments: false
-      sidebar:
-        nav: "docs"
+      
 
