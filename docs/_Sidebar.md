@@ -1,9 +1,9 @@
-[Home](../wiki/Bonvision)
+[Home](https://amansaleem.github.io/BonVision)
 
-[Documentation](../wiki/BonVision-nodes)
+[Documentation](BonVision-nodes)
 
-[Tutorials](../wiki#tutorials)
+[Tutorials](Tutorials)
 
-[Demos](../wiki#demos)
+[Demos](demos)
 
-[Community](../wiki#current-users)
+Community
