@@ -24,9 +24,9 @@ Bonsai: [Node info](https://bonsai-rx.org//docs/observables/), [Bonsai Resources
 ***
 ## Tutorials
 
-### [Creating basic Stimuli: Two stimuli on screen](https://github.com/amansaleem/BonVision/blob/master/docs/Tutorials/Creating-Basic-Stimuli.md)
+### [Creating basic Stimuli: Two stimuli on screen](https://github.com/amansaleem/BonVision/blob/master/docs/Creating-Basic-Stimuli.md)
 
-### [Creating basic Stimuli: Series of stimuli presented in random order](../docs/Tutorials/Creating-basic-Stimuli:-Series-of-stimuli)
+### [Creating basic Stimuli: Series of stimuli presented in random order](../docs/Creating-basic-Stimuli:-Series-of-stimuli)
 
 ### [Creating basic Stimuli: Adding a sequence within observations, Adaptation example](../docs/Tutorials/Creating-basic-Stimuli:-Adding-a-sequence-within-observations)
 
