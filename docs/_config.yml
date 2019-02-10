@@ -1,5 +1,5 @@
-#theme: jekyll-theme-slate
-remote-theme: benbalter/retlab
+theme: jekyll-theme-slate
+#remote-theme: benbalter/retlab
 #remote-theme: arnp/herring-cove
 
 plugins:
