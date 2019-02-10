@@ -1,2 +1,2 @@
-gem "herring-cove"
-gem "minima"
+source "https://rubygems.org"
+gemspec
