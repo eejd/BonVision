@@ -13,9 +13,9 @@ BonVision is an open-source closed-loop visual environment generator developed b
 
 ***
 ## Resources
-[Installation instructions](https://amansaleem.github.io//Requirements-&-Installation)
+[Installation instructions](https://amansaleem.github.io/BonVision//Requirements-&-Installation)
 
-[Documentation for BonVision nodes](https://amansaleem.github.io//BonVision-nodes)
+[Documentation for BonVision nodes](https://amansaleem.github.io/BonVision//BonVision-nodes)
 
 [Forums](https://groups.google.com/forum/#!forum/bonsai-users): We will be using the Bonsai google forum for BonVision discussions, as some issues can be overlapping and related to the Bonsai framework rather than the specifics of BonVision.
 
@@ -25,13 +25,13 @@ Bonsai: [Node info](https://bonsai-rx.org//docs/observables/), [Bonsai Resources
 ## Tutorials
 
 
-### [Creating basic Stimuli: Two stimuli on screen](https://amansaleem.github.io//Creating-Basic-Stimuli)
+### [Creating basic Stimuli: Two stimuli on screen](https://amansaleem.github.io/BonVision//Creating-Basic-Stimuli)
 
-### [Creating basic Stimuli: Series of stimuli presented in random order](https://amansaleem.github.io//Creating-basic-Stimuli:-Series-of-stimuli)
+### [Creating basic Stimuli: Series of stimuli presented in random order](https://amansaleem.github.io/BonVision//Creating-basic-Stimuli:-Series-of-stimuli)
 
-### [Creating basic Stimuli: Adding a sequence within observations, Adaptation example](https://amansaleem.github.io//Creating-basic-Stimuli:-Adding-a-sequence-within-observations)
+### [Creating basic Stimuli: Adding a sequence within observations, Adaptation example](https://amansaleem.github.io/BonVision//Creating-basic-Stimuli:-Adding-a-sequence-within-observations)
 
-### [Creating basic Stimuli: Logging](https://amansaleem.github.io//Creating-basic-Stimuli:-Logging) (_Coming soon_)(Todo: to explain how to set up logging data on the same stimulus as above)
+### [Creating basic Stimuli: Logging](https://amansaleem.github.io/BonVision//Creating-basic-Stimuli:-Logging) (_Coming soon_)(Todo: to explain how to set up logging data on the same stimulus as above)
 
 ### [Display environment basics in BonVision](../docs/Tutorials/Display-Environment-basics) <WIP>
 
