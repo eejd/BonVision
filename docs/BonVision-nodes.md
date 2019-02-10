@@ -9,7 +9,7 @@ There are _5_ types of BonVision nodes:
 ***
 
 ## 1. Primitives
-* **CreateGratings:** _Creates and draws fixed parameter 2D sinewave gratings_
+* [**CreateGratings:**](CreateGratings) _Creates and draws fixed parameter 2D sinewave gratings_
 * **DrawCheckerboard:** _Draws a parameterized checkerboard stimulus._
 * **DrawCircle:** _Draws a single colored circle._
 * **DrawGratings:** _Draws parameterized 2D sinewave gratings._
