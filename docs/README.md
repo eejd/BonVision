@@ -15,7 +15,7 @@ BonVision is an open-source closed-loop visual environment generator developed b
 ## Resources
 [Installation instructions](../docs/Requirements-&-Installation)
 
-[Documentation for BonVision nodes](../docs/BonVision-nodes)
+[Documentation for BonVision nodes](../docs/Documentation/BonVision-nodes)
 
 [Forums](https://groups.google.com/forum/#!forum/bonsai-users): We will be using the Bonsai google forum for BonVision discussions, as some issues can be overlapping and related to the Bonsai framework rather than the specifics of BonVision.
 
@@ -24,15 +24,15 @@ Bonsai: [Node info](https://bonsai-rx.org//docs/observables/), [Bonsai Resources
 ***
 ## Tutorials
 
-### [Creating basic Stimuli: Two stimuli on screen](../docs/Creating-Basic-Stimuli)
+### [Creating basic Stimuli: Two stimuli on screen](../docs/Tutorials/Creating-Basic-Stimuli)
 
-### [Creating basic Stimuli: Series of stimuli presented in random order](../docs/Creating-basic-Stimuli:-Series-of-stimuli)
+### [Creating basic Stimuli: Series of stimuli presented in random order](../docs/Tutorials/Creating-basic-Stimuli:-Series-of-stimuli)
 
-### [Creating basic Stimuli: Adding a sequence within observations, Adaptation example](../docs/Creating-basic-Stimuli:-Adding-a-sequence-within-observations)
+### [Creating basic Stimuli: Adding a sequence within observations, Adaptation example](../docs/Tutorials/Creating-basic-Stimuli:-Adding-a-sequence-within-observations)
 
-### [Creating basic Stimuli: Logging](../docs/Creating-basic-Stimuli:-Logging) (_Coming soon_)(Todo: to explain how to set up logging data on the same stimulus as above)
+### [Creating basic Stimuli: Logging](../docs/Tutorials/Creating-basic-Stimuli:-Logging) (_Coming soon_)(Todo: to explain how to set up logging data on the same stimulus as above)
 
-### [Display environment basics in BonVision](../docs/Display-Environment-basics) <WIP>
+### [Display environment basics in BonVision](../docs/Tutorials/Display-Environment-basics) <WIP>
 
 ***
 ## Demos
