@@ -1,12 +1,12 @@
 ---
-title: "Getting started | Creating basics stimuli"
+title: "Creating basics stimuli"
 redirect_from: /pages
 excerpt: "A quick start guide to installing and running the Bonsai editor."
 last_modified_at: 
 author_profile: false
 ---
 
-## This will take you through the steps to draw two grating stimuli on the screen for a fixed period of time.
+This will take you through the steps to draw two grating stimuli on the screen for a fixed period of time.
 
 ### Step 0
 Start Bonsai and start a new project
