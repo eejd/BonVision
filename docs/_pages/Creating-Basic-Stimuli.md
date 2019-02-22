@@ -20,6 +20,7 @@ B![](BonVision/docs/assets/Images/Creating_Basic_Step0.PNG)
 C![](../docs/assets/Images/Creating_Basic_Step0.PNG)
 D![](BonVision/assets/Images/Creating_Basic_Step0.PNG)
 E![](/assets/Images/Creating_Basic_Step0.PNG)
+F![]({{'/assets/Images/Creating_Basic_Step0.PNG' | relative_url}})
 #(BonVision/docs/assets/Images/CreateBasic/Creating_Basic_Step1_renderFrame.PNG)
 ***
 At this point we need to add a coordinate frame. For simplicity lets use **NormaliszedViewport**
