@@ -22,11 +22,18 @@ B![](BonVision/docs/assets/Images/Creating_Basic_Step0.PNG)
 
 C![](../docs/assets/Images/Creating_Basic_Step0.PNG)
 
-D![](BonVision/assets/Images/Creating_Basic_Step0.PNG)
+D![](https://github.com/amansaleem/BonVision/blob/master/docs/assets/Images/Creating_Basic_Step0.PNG)
 
 E![](/assets/Images/Creating_Basic_Step0.PNG)
 
 F![abs]({{ '/assets/Images/Creating_Basic_Step0.PNG' | relative_url }})
+
+G {% include figure image_path="https://github.com/amansaleem/BonVision/blob/master/docs/assets/Images/Creating_Basic_Step0.PNG" alt="this is a placeholder image" caption="This is a figure caption." %}
+
+H <figure>
+  <img src="https://github.com/amansaleem/BonVision/blob/master/docs/assets/Images/Creating_Basic_Step0.PNG" alt="this is a placeholder image">
+  <figcaption>This is a figure caption.</figcaption>
+</figure>
 
 #(BonVision/docs/assets/Images/CreateBasic/Creating_Basic_Step1_renderFrame.PNG)
 ***
