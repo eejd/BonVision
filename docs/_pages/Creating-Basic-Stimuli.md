@@ -10,12 +10,17 @@ This will take you through the steps to draw two grating stimuli on the screen f
 
 ### Step 0
 Start Bonsai and start a new project
-![](../assets/Images/Creating_Basic_Step0.PNG)
+![](BonVision/assets/Images/Creating_Basic_Step0.PNG)
 
 ### Step 1: Initialize
 All Bonvision stimuli start with a **RenderFrame** node.
 This node passed the render command from the graphics card. 
-![](../docs/assets/Images/CreateBasic/Creating_Basic_Step1_renderFrame.PNG)
+A![](../assets/Images/Creating_Basic_Step0.PNG)
+B![](BonVision/docs/assets/Images/Creating_Basic_Step0.PNG)
+C![](../docs/assets/Images/Creating_Basic_Step0.PNG)
+D![](BonVision/assets/Images/Creating_Basic_Step0.PNG)
+E![](/assets/Images/Creating_Basic_Step0.PNG)
+#(BonVision/docs/assets/Images/CreateBasic/Creating_Basic_Step1_renderFrame.PNG)
 ***
 At this point we need to add a coordinate frame. For simplicity lets use **NormaliszedViewport**
 This defined coordinates of the window as -1 to 1 along x and -1 to 1 along y
