@@ -8,7 +8,7 @@ author_profile: false
 
 This will take you through the steps to draw two grating stimuli on the screen for a fixed period of time.
 
-### Step 0
+### Step 0 ello
 Start Bonsai and start a new project
 ![](../assets/Images/Creating_Basic_Step0.PNG)
 
