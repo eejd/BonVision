@@ -1,0 +1,80 @@
+# main links
+main:
+  - title: "About"
+    url: /info/Home/
+  - title: "Getting Started"
+    url: /pages/info/
+  - title: "Docs"
+    url: /docs/docs/
+  - title: "Demos"
+    url: /demos/demos/
+  - title: "Community"
+    url: /info/community/
+
+pages:
+    - title: Getting Started
+      url: /pages/info/
+      children:
+      - title: "Installation"
+        url: /pages/Installation/
+      - title: "Display Environment"
+        url: /pages /Display-Environment-basics/
+      - title: "Create basic Stimuli"
+        url: /pages/Creating-basic-Stimuli/
+      - title: "Series of Stimuli"
+        url: /pages/-Series-of-stimuli/
+      - title: "Sequence of Stimuli"
+        url: /pages/-Adding-a-sequence-within-#observations/
+      - title: "Logging"
+        url: /pages/-Logging/
+
+info:
+
+
+demos:
+    - title: Demos
+      url: /Demos/
+      children:
+      - title: "Demo 2AFC"
+        url: /Demos/
+      - title: "Demo Physiology"
+        url: /Demos/
+      - title: "Demo VR"
+        url: /Demos/
+      - title: "Demo AR"
+        url: /Demos/
+
+docs:
+    - title: Primitives
+      url: /BonVision-nodes/
+      children:
+      - title: "CreateGratings"
+        url: /BonVision-nodes/
+      - title: "DrawCheckerboard"
+        url: /BonVision-nodes/
+      - title: "DrawCircle"
+        url: /BonVision-nodes/
+    - title: "Environment"
+      url: /BonVision-nodes/
+      children:
+      - title: "GammaCorrection"
+        url: /BonVision-nodes/
+      - title: "MeshMapping"
+        url: /BonVision-nodes/
+    - title: Collections
+      url: /BonVision-nodes/
+    - title: Logging
+      url: /BonVision-nodes/
+      children:
+      url: /BonVision-nodes/
+       - title: "EventLogger"
+         url: /BonVision-nodes/
+       - title: "LogEvent"
+         url: /BonVision-nodes/
+    - title: Generic
+      url: /BonVision-nodes/
+    - title: Shaders
+      url: /BonVision-nodes/
+      children:
+        - title: "RenderFrame"
+          url: /BonVision-nodes/

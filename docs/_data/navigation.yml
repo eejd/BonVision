@@ -1,12 +1,118 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "About"
+    url: /info/Home/
+  - title: "Getting Started"
+    url: /pages/info/
+  - title: "Docs"
+    url: /docs/docs/
+  - title: "Demos"
+    url: /demos/demos/
+  - title: "Community"
+    url: /info/community/
+
+pages:
+    - title: Getting Started
+      url: /pages/info/
+      children:
+      - title: "Installation"
+        url: /pages/Install/
+      - title: "Display Environment basics/"
+        url: /pages/Display-Environment-basics/
+      - title: "Create basic Stimuli"
+        url: /pages/Creating-basic-Stimuli/
+      # - title: "Series of Stimuli"
+        # url: /pages/-Series-of-stimuli/
+      # - title: "Sequence of Stimuli"
+        # url: /pages/-Adding-a-sequence-within-#observations/
+      # - title: "Logging"
+        # url: /pages/-Logging/
+
+demos:
+    - title: Demos
+      url: /Demos/
+      children:
+      - title: "Demo 2AFC"
+        url: /Demos/
+      - title: "Demo Physiology"
+        url: /Demos/
+      - title: "Demo VR"
+        url: /Demos/
+      - title: "Demo AR"
+        url: /Demos/
+
+docs:
+    - title: Primitives
+      url: /docs/
+      children:
+      - title: DrawCheckerboard
+        url: /docs/DrawCheckerboard/
+      - title: "DrawCircle"
+        url: /docs/DrawCircle/
+      - title: "DrawGratings"
+        url: /docs/DrawGratings/
+      - title: "DrawImage"
+        url: /docs/DrawImage/
+      - title: "DrawModel"
+        url: /docs/DrawModel/
+      - title: "DrawQuad"
+        url: /docs/DrawQuad/
+      - title: "DrawText"
+        url: /docs/DrawText/
+      - title: "DrawTexturedModel"
+        url: /docs/DrawTexturedModel/
+      - title: "ParameterRange"
+        url: /docs/ParameterRange/
+      - title: "PrimitiveResource"
+        url: /docs/PrimitiveResource/
+      - title: "RangeAnimation"
+        url: /docs/RangeAnimation/
+    - title: "Environment"
+      url: /docs/
+      children:
+      - title: "DrawViewport"
+        url: /docs/DrawViewport
+      - title: "MeshMapping"
+        url: /docs/MeshMapping
+      - title: "GammaCorrection"
+        url: /docs/GammaCorrection
+      - title: "NormalizedViewport"
+        url: /docs/NormalizedViewport
+      - title: "OrthographicViewport"
+        url: /docs/OrthographicViewport
+      - title: "PerspectiveViewport"
+        url: /docs/PerspectiveViewport
+      - title: "SphereMapping"
+        url: /docs/SphereMapping
+      - title: "ViewingWindow"
+        url: /docs/ViewingWindow
+    - title: "Collections"
+      url: /docs/
+      children:
+      - title: "EnsureGratingParameters"
+        url: /docs/EnsureGratingParameters
+      - title: "GratingSpecification"
+        url: /docs/GratingSpecification
+      - title: "SparseNoise"
+        url: /docs/SparseNoise
+    - title: Logging
+      url: /docs/
+      children:
+      - title: "EventLogger"
+        url: /docs/EventLogger
+      - title: "LogEvent"
+        url: /docs/LogEvent
+      - title: "TimeStampedEventLogger"
+        url: /docs/TimeStampedEventLogger
+    - title: Generic
+      url: /docs/
+      children:
+      - title: "Angle"
+        url: /docs/Angle
+      - title: "SampleMany"
+        url: /docs/SampleMany
+    - title: Shaders
+      url: /docs/
+      children:
+        - title: "RenderFrame"
+          url: /docs/          

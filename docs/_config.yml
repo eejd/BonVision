@@ -10,22 +10,22 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-#theme                  : minimal-mistakes-jekyll
-remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" #"contrast" #"default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+# theme                  : "minimal-mistakes-jekyll"
+# remote_theme           : "mmistakes/minimal-mistakes"
+minimal_mistakes_skin    : "default" # "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "bonVision"
-title_separator          : "-"
+locale                   : "en-GB"
+title                    : "BonVision"
+title_separator          : "|"
 name                     : "Aman Saleem"
-description              : "Support site for bonVision"
-url                      : "https://amansaleem.github.io/BonVision/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
+description              : "Information site for the BonVision package"
+url                      : "https://amansaleem.github.io/BonVision/"
+baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "amansaleem/BonVision" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "https://github.com/amansaleem/BonVision/blob/master/docs/Images/logoBasic2D-01.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : "bon Vision" # overrides the website title displayed in the masthead, use " " for no title
+logo                     : "/assests/Images/logo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title           : "BonVision" # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -64,9 +64,9 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
-search_provider          : # lunr (default), algolia, google
+search                   : true # true, false (default)
+search_full_content      : true # true, false (default)
+search_provider          : lunr # lunr (default), algolia, google
 algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
@@ -83,7 +83,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               : #"aman_sal"
+  username               :
 facebook:
   username               :
   app_id                 :
@@ -106,11 +106,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Aman Saleem"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : #""
-  location         : "UCL, London"
-  email            : 
+  name             : "BonVision"
+  avatar           : "/assests/Images/logo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Software package to create and control visual environments"
+  location         : "Institute of Behavioural Neuroscience, UCL, London"
+  email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -136,13 +136,13 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url:
+      url: "https://twitter.com/aman_sal"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/amansaleem/BonVision"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -157,6 +157,10 @@ footer:
 # Reading Files
 include:
   - .htaccess
+  - _pages
+  - _demos
+  - _docs
+  - _info
   - _pages
 exclude:
   - "*.sublime-project"
@@ -232,6 +236,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  # - jekyll-redirect-from
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -281,50 +286,86 @@ compress_html:
 
 # Collections
 collections:
-  documentation:
-    output: true
-    permalink: /:collection/:path/
-  tutorials:
-    output: true
-    permalink: /:collection/:path/
   demos:
     output: true
     permalink: /:collection/:path/
-  
+  docs:
+    output: true
+    permalink: /:collection/:path/
+  info:
+    output: true
+    permalink: /:collection/:path/
+  pages:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
-  # _documentation
+  # _posts
   - scope:
-      path: "_documentation"
-      type: documentation
+      path: ""
+      type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
-      comments: true
-      share: true
+      comments: # true
+      share: false
       related: true
       sidebar:
         nav: "docs"
-  # _tutorials
-  - scope:
-      path: "_tutorials"
-      type: tutorials
-    values:
-      layout: single
-      author_profile: true
-      sidebar:
-        nav: "docs"
+
   # _demos
   - scope:
-      path: "_demos"
+      path: ""
       type: demos
     values:
       layout: single
-      read_time: false
       author_profile: false
+      read_time: false
+      comments: # true
       share: false
-      comments: false
-      
+      related: true
+      sidebar:
+        nav: "demos"
 
+  # _docs
+  - scope:
+      path: ""
+      type: docs
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      comments: # true
+      share: false
+      related: true
+      sidebar:
+        nav: "docs"
+
+  # _info
+  - scope:
+      path: ""
+      type: info
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      comments: # true
+      share: false
+      related: true
+      sidebar:
+        nav: "info"
+# _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: # true
+      share: false
+      related: true
+      sidebar:
+        nav: "pages"
