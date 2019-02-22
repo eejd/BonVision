@@ -15,12 +15,19 @@ Start Bonsai and start a new project
 ### Step 1: Initialize
 All Bonvision stimuli start with a **RenderFrame** node.
 This node passed the render command from the graphics card. 
+
 A![](../assets/Images/Creating_Basic_Step0.PNG)
+
 B![](BonVision/docs/assets/Images/Creating_Basic_Step0.PNG)
+
 C![](../docs/assets/Images/Creating_Basic_Step0.PNG)
+
 D![](BonVision/assets/Images/Creating_Basic_Step0.PNG)
+
 E![](/assets/Images/Creating_Basic_Step0.PNG)
-F![]({{'/assets/Images/Creating_Basic_Step0.PNG' | relative_url}})
+
+F![abs]({{ '/assets/Images/Creating_Basic_Step0.PNG' | relative_url }})
+
 #(BonVision/docs/assets/Images/CreateBasic/Creating_Basic_Step1_renderFrame.PNG)
 ***
 At this point we need to add a coordinate frame. For simplicity lets use **NormaliszedViewport**
