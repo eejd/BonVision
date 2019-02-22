@@ -1,14 +1,10 @@
 ---
-title: "BonVis/BonVision/ion"
+title: "BonVision - Making Visual Environments"
 redirect_from: /info/Home
 excerpt: "A quick start guide to installing and running the Bonsai editor."
 last_modified_at: 
 author_profile: true
 ---
-
-# BonVision   -    Making Visual Environments
-
-## Welcome to the BonVision wiki!
 
 BonVision is an open-source closed-loop visual environment generator developed by the [Saleem Lab](www.saleemlab.com) and [Solomon Lab](www.solomonlab.info) at the [UCL Institute of Behavioural Neuroscience](http://www.ibn.ucl.ac.uk/) in collaboration with [NeuroGears](https://neurogears.org/).
 
@@ -21,10 +17,10 @@ BonVision is an open-source closed-loop visual environment generator developed b
 
 ***
 
-[Installation](/BonVision/Installation)
+[Installation](/BonVision/Install)
 
-[Getting Started](/BonVision/GettingStarted)
+[Getting Started](/BonVision/info)
 
-[Documentation for BonVision nodes](/BonVision/BonVision-nodes)
+[Documentation for BonVision nodes](/BonVision/docs)
 
 [Community](/BonVision/community)
