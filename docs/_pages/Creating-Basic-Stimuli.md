@@ -10,7 +10,7 @@ This will take you through the steps to draw two grating stimuli on the screen f
 
 ### Step 0
 Start Bonsai and start a new project
-![](https://github.com/amansaleem/BonVision/docs/assets/Images/CreateBasic/Creating_Basic_Step0.PNG)
+![](https://github.com/amansaleem/BonVision/docs/assets/Images/Creating_Basic_Step0.PNG)
 
 ### Step 1: Initialize
 All Bonvision stimuli start with a **RenderFrame** node.
