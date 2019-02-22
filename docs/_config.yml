@@ -109,7 +109,7 @@ author:
   name             : "BonVision"
   avatar           : "/assests/Images/logo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Software package to create and control visual environments"
-  location         : "Institute of Behavioural Neuroscience, UCL, London"
+  location         : "IBN UCL, London"
   email            :
   links:
     - label: "Email"
