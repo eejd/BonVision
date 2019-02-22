@@ -15,7 +15,7 @@ Start Bonsai and start a new project
 ### Step 1: Initialize
 All Bonvision stimuli start with a **RenderFrame** node.
 This node passed the render command from the graphics card. 
-![](../assets/Images/CreateBasic/Creating_Basic_Step1_renderFrame.PNG)
+![](../docs/assets/Images/CreateBasic/Creating_Basic_Step1_renderFrame.PNG)
 ***
 At this point we need to add a coordinate frame. For simplicity lets use **NormaliszedViewport**
 This defined coordinates of the window as -1 to 1 along x and -1 to 1 along y
