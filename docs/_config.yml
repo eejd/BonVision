@@ -12,12 +12,12 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-GB"
 title                    : "BonVision"
-title_separator          : "|"
+title_separator          : "-"
 name                     : "Aman Saleem"
 description              : "Information site for the BonVision package"
 url                      : "https://amansaleem.github.io/BonVision/"
@@ -107,7 +107,7 @@ analytics:
 # Site Author
 author:
   name             : "BonVision"
-  avatar           : "/assests/Images/logo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : # "/assests/Images/logo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Software package to create and control visual environments"
   location         : "IBN UCL, London"
   email            :
