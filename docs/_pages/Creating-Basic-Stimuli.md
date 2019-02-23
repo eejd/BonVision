@@ -15,27 +15,7 @@ Start Bonsai and start a new project
 ### Step 1: Initialize
 All Bonvision stimuli start with a **RenderFrame** node.
 This node passed the render command from the graphics card. 
-
-A![](../assets/Images/Creating_Basic_Step0.PNG' | relative_url }})
-
-B![](BonVision/docs/assets/Images/Creating_Basic_Step0.PNG' | relative_url }})
-
-C![](../docs/assets/Images/Creating_Basic_Step0.PNG' | relative_url }})
-
-D![](https://github.com/amansaleem/BonVision/blob/master/docs/assets/Images/Creating_Basic_Step0.PNG' | relative_url }})
-
-E![]({{ '/assets/Images/Creating_Basic_Step0.PNG' | relative_url }})
-
-F![abs]({{ '/assets/Images/Creating_Basic_Step0.PNG' | relative_url }})
-
-G {% include figure image_path="https://github.com/amansaleem/BonVision/blob/master/docs/assets/Images/Creating_Basic_Step0.PNG" alt="this is a placeholder image" caption="This is a figure caption." %}
-
-H <figure>
-  <img src="https://github.com/amansaleem/BonVision/blob/master/docs/assets/Images/Creating_Basic_Step0.PNG" alt="this is a placeholder image">
-  <figcaption>This is a figure caption.</figcaption>
-</figure>
-
-#(BonVision/docs/assets/Images/CreateBasic/Creating_Basic_Step1_renderFrame.PNG' | relative_url }})
+![]({{ '/assets/Images/CreateBasic/Creating_Basic_Step1_renderFrame.PNG' | relative_url }})
 ***
 At this point we need to add a coordinate frame. For simplicity lets use **NormaliszedViewport**
 This defined coordinates of the window as -1 to 1 along x and -1 to 1 along y
