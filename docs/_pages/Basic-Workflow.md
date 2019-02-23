@@ -4,6 +4,7 @@ redirect_from: /pages
 excerpt: ""
 last_modified_at: 
 author_profile: false
+toc: true
 ---
 There are five basic sections to making a workflow in BonVision:
 ![]({{ '/assets/Images/BasicWorkflow/Structure.png' | relative_url }})
