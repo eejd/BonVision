@@ -5,11 +5,12 @@ excerpt: "A quick start guide to installing and running the Bonsai editor."
 last_modified_at: 
 author_profile: false
 ---
+
 Visual neuroscience is almost always carried out in eye-centric coordinate, which defines stimuli in terms of _Visual angle_ subtended at the eye. This helps keep the definition of the image that reaches the retina consistent. However, visual displays work in pixel coordinates (with specific physical characteristics) and to draw accurate stimuli one has to calculate the conversion between the two coordinate frames. This requires a new transform function to be calculated for any display, and few programs are available to help with this. 
 
-The general solution we have with BonVision is to separate the [_**Stimulus Generation**_](https://github.com/amansaleem/BonVision/wiki/Display-Environment-basics#stimulus-generation) and the [_**Display**_](https://github.com/amansaleem/BonVision/wiki/Display-Environment-basics#display-types) aspects of the process. 
-* [_**Stimulus Generation**_](https://github.com/amansaleem/BonVision/wiki/Display-Environment-basics#stimulus-generation): Stimuli are always generated and rendered in eye-centric coordinate frame on virtual surfaces. 
-* [_**Display**_](https://github.com/amansaleem/BonVision/wiki/Display-Environment-basics#display-types): And the visual displays (screens/projectors) act as windows into the rendered images. 
+The general solution we have with BonVision is to separate the [_**Stimulus Generation**_](/pages/Display-Environment-basics#stimulus-generation) and the [_**Display**_](/pages/Display-Environment-basics#display-types) aspects of the process. 
+* [_**Stimulus Generation**_](/pages/Display-Environment-basics#stimulus-generation): Stimuli are always generated and rendered in eye-centric coordinate frame on virtual surfaces. 
+* [_**Display**_](/pages/Display-Environment-basics#display-types): And the visual displays (screens/projectors) act as windows into the rendered images. 
 
 # Stimulus Generation
 BonVision has the following solutions for _**Stimulus Generation**_:
@@ -19,7 +20,7 @@ Note: Needs a Display object: preferably a ViewingWindow
 
 In this case, stimuli are always rendered onto the inside of a sphere. This allows easy eye-centric definitions pf stimuli in visual angle units. The displays are then windows that observe these rendered stimuli. We use Spherical coordinates to define all stimulus parameters in this case. 
 
-![](https://github.com/amansaleem/BonVision/blob/master/docs/Images/DisplayLogic/SphericalCoord.png)
+![]({{ '/assets//Images/DisplayLogic/SphericalCoord.png' | relative_url }})
 
 [The details of the implementation of Sphere mapping](https://en.wikibooks.org/wiki/Blender_3D:_Noob_to_Pro/UV_Map_Basics)
 
@@ -36,7 +37,7 @@ In this case all the stimuli are created in eye-centric physical coordinates (ce
 ### For Virtual Reality (VR)
 VR can be easily defined as a situation where the eye, and the screens (windows) are fixed positions, while the all the objects (or VR environment) moves across the eye.
 
-![](https://github.com/amansaleem/BonVision/blob/master/docs/Images/DisplayLogic/VRcartoon.png)
+![]({{ '/assets//Images/DisplayLogic/VRcartoon.png' | relative_url }})
 
 > Example rendering to be added here
 
@@ -44,7 +45,7 @@ VR can be easily defined as a situation where the eye, and the screens (windows)
 
 This is a scenario where, generally, the screens remain in a fixed position and the animal can move around. Since we have an eye-centric coordinate frame, the objects and the screen move around to generate an AR. 
 
-![](https://github.com/amansaleem/BonVision/blob/master/docs/Images/DisplayLogic/ARcartoon.jpg)
+![]({{ '/assets//Images/DisplayLogic/ARcartoon.jpg)
 
 > Example rendering to be added here
 
@@ -52,7 +53,7 @@ This is a scenario where, generally, the screens remain in a fixed position and 
 ### _This is convenient while designing and testing, prior to an actual experiment_
 It just scales the screen from -1 to 1 on the two axes
 
-![](https://github.com/amansaleem/BonVision/blob/master/docs/Images/DisplayLogic/NormalizedViewport.png)
+![]({{ '/assets//Images/DisplayLogic/NormalizedViewport.png' | relative_url }})
 
 # Display Types
 BonVision has the following solutions for _**DisplayTypes**_:
@@ -71,9 +72,9 @@ These are the measures that need to be added for each display object:
 
 This is an example of the same stimulus rendered on different displays:
 
-![](https://github.com/amansaleem/BonVision/blob/master/docs/Images/DisplayLogic/DisplayWindowLogic-01.png)
-![](https://github.com/amansaleem/BonVision/blob/master/docs/Images/DisplayLogic/DisplayWindowLogic-03.png)
-![](https://github.com/amansaleem/BonVision/blob/master/docs/Images/DisplayLogic/DisplayWindowLogic-05.png)
+![]({{ '/assets//Images/DisplayLogic/DisplayWindowLogic-01.png' | relative_url }})
+![]({{ '/assets//Images/DisplayLogic/DisplayWindowLogic-03.png' | relative_url }})
+![]({{ '/assets//Images/DisplayLogic/DisplayWindowLogic-05.png' | relative_url }})
 
 <Images on A, B and C>
 
