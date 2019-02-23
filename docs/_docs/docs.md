@@ -4,6 +4,7 @@ redirect_from: /docs
 excerpt: "A quick start guide to installing and running the Bonsai editor."
 last_modified_at: 
 author_profile: false
+toc: true
 ---
 
 There are _5_ types of BonVision nodes:
