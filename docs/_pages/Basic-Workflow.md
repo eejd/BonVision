@@ -6,7 +6,7 @@ last_modified_at:
 author_profile: false
 ---
 There are four basic section to making a workflow in BonVision:
-![]({{ '/assets/Images/BasicWorkflow/Structure.PNG' | relative_url }})
+![]({{ '/assets/Images/BasicWorkflow/Structure.png' | relative_url }})
 
 `*` *Map Stimuli* and *Define Display* are optional. They can be skipped when prototyping
 
