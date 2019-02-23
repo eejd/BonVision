@@ -19,13 +19,13 @@ pages:
         url: /pages/Install/
       - title: "Basic Workflow"
         url: /pages/01-Basic-Workflow/
-      - title: "Display Environment basics"
+      - title: "Display Environment"
         url: /pages/02-Display-Environment-basics/
-      - title: "Create basic Stimuli"
+      - title: "Basic Stimulus"
         url: /pages/03-Creating-Basic-Stimuli/
-      - title: "Series of Stimuli"
+      - title: "Stimulus Series"
         url: /pages/04-Series-of-stimuli/
-      - title: "Sequence of Stimuli"
+      - title: "Stimulus sequence"
         url: /pages/05-Adding-sequence/
       - title: "Logging"
         url: /pages/06-Logging/
