@@ -19,6 +19,8 @@ pages:
         url: /pages/Install/
       - title: "Display Environment basics"
         url: /pages/Display-Environment-basics/
+      - title: "Basic Workflow"
+        url: /pages/Basic-Workflow/
       - title: "Create basic Stimuli"
         url: /pages/Creating-Basic-Stimuli/
       # - title: "Series of Stimuli"
