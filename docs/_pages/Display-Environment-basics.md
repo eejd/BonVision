@@ -4,6 +4,7 @@ redirect_from: /pages
 excerpt: "A quick start guide to installing and running the Bonsai editor."
 last_modified_at: 
 author_profile: false
+toc: true
 ---
 
 Visual neuroscience is almost always carried out in eye-centric coordinate, which defines stimuli in terms of _Visual angle_ subtended at the eye. This helps keep the definition of the image that reaches the retina consistent. However, visual displays work in pixel coordinates (with specific physical characteristics) and to draw accurate stimuli one has to calculate the conversion between the two coordinate frames. This requires a new transform function to be calculated for any display, and few programs are available to help with this. 
