@@ -8,7 +8,7 @@ author_profile: false
 ### Getting Started
 
 * [Installation instructions](/BonVision/pages/Install)
-* [Basic workflow logic for BonVision](/BonVision/pages/Display-Environment-basics)
+* [Basic workflow logic for BonVision](/BonVision/pages/Basics-Workflow)
 * [Display environment logic for BonVision](/BonVision/pages/Display-Environment-basics)
 
 ### Step-by-Step instructions to:
