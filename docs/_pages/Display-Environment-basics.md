@@ -20,7 +20,7 @@ Note: Needs a Display object: preferably a ViewingWindow
 
 In this case, stimuli are always rendered onto the inside of a sphere. This allows easy eye-centric definitions pf stimuli in visual angle units. The displays are then windows that observe these rendered stimuli. We use Spherical coordinates to define all stimulus parameters in this case. 
 
-![]({{ '/assets//Images/DisplayLogic/SphericalCoord.png' | relative_url }})
+![]({{ '/assets/Images/DisplayLogic/SphericalCoord.png' | relative_url }})
 
 [The details of the implementation of Sphere mapping](https://en.wikibooks.org/wiki/Blender_3D:_Noob_to_Pro/UV_Map_Basics)
 
@@ -32,28 +32,28 @@ Note: Needs a Display object: preferably a PerspectiveViewingWindow
 [The details of Cube Mapping are explained here:](https://en.wikipedia.org/wiki/Cube_mapping)
 
 In this case all the stimuli are created in eye-centric physical coordinates (centimeters for example) and rendered onto a unit Cube. The displays (Perspective cameras) are then windows into these rendered images.
-<probably easiest with a whiteboard drawing here>
+*probably easiest with a whiteboard drawing here*
 
 ### For Virtual Reality (VR)
 VR can be easily defined as a situation where the eye, and the screens (windows) are fixed positions, while the all the objects (or VR environment) moves across the eye.
 
-![]({{ '/assets//Images/DisplayLogic/VRcartoon.png' | relative_url }})
+![]({{ '/assets/Images/DisplayLogic/VRcartoon.png' | relative_url }})
 
-> Example rendering to be added here
+ Example rendering to be added here
 
 ### For Augmented Reality (AR)
 
 This is a scenario where, generally, the screens remain in a fixed position and the animal can move around. Since we have an eye-centric coordinate frame, the objects and the screen move around to generate an AR. 
 
-![]({{ '/assets//Images/DisplayLogic/ARcartoon.jpg)
+![]({{ '/assets/Images/DisplayLogic/ARcartoon.jpg' | relative_url }})
 
-> Example rendering to be added here
+ Example rendering to be added here
 
 ## C. Normalized Viewport
 ### _This is convenient while designing and testing, prior to an actual experiment_
 It just scales the screen from -1 to 1 on the two axes
 
-![]({{ '/assets//Images/DisplayLogic/NormalizedViewport.png' | relative_url }})
+![]({{ '/assets/Images/DisplayLogic/NormalizedViewport.png' | relative_url }})
 
 # Display Types
 BonVision has the following solutions for _**DisplayTypes**_:
@@ -72,11 +72,11 @@ These are the measures that need to be added for each display object:
 
 This is an example of the same stimulus rendered on different displays:
 
-![]({{ '/assets//Images/DisplayLogic/DisplayWindowLogic-01.png' | relative_url }})
-![]({{ '/assets//Images/DisplayLogic/DisplayWindowLogic-03.png' | relative_url }})
-![]({{ '/assets//Images/DisplayLogic/DisplayWindowLogic-05.png' | relative_url }})
+![]({{ '/assets/Images/DisplayLogic/DisplayWindowLogic-01.png' | relative_url }})
+![]({{ '/assets/Images/DisplayLogic/DisplayWindowLogic-03.png' | relative_url }})
+![]({{ '/assets/Images/DisplayLogic/DisplayWindowLogic-05.png' | relative_url }})
 
-<Images on A, B and C>
+Images on A, B and C
 
 ## II. PerspectiveViewingWindow
 ### _This is best for creating 3D VR/AR stimuli_
