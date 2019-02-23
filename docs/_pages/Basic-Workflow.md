@@ -13,7 +13,7 @@ There are five basic sections to making a workflow in BonVision:
 
 ***
 
-## BonVision window 
+### BonVision window 
 This loads up the basic resources (textures, etc) that would be used by BonVision. Th basic structure is:
 
 ![]({{ '/assets/Images/BasicWorkflow/BonVisionWindow.PNG' | relative_url }})
@@ -23,7 +23,7 @@ and [RenderFrame](/docs/Shaders)
 
 ***
 
-## Drawing Region
+### Drawing Region
 This defines which region of visual space is used for the visual world. Note that this can be larger than the actual region used. Ideally one should use [Orthographic Viewport](/docs/OrthographicViewport). This defines everything in terms of visual angles. 
 
 ![]({{ '/assets/Images/BasicWorkflow/DrawReg_ortho.PNG' | relative_url }})
@@ -34,7 +34,7 @@ If you are just prototypic stimuli, one can use [Normalised Viewport](/docs/Norm
 
 ***
 
-## Draw Stimuli
+### Draw Stimuli
 This is where you generate all the aspects of the visual environment. Covered in more detail in later sections.
 
 ![]({{ '/assets/Images/BasicWorkflow/DrawStim.PNG' | relative_url }})
@@ -43,13 +43,13 @@ This is where you generate all the aspects of the visual environment. Covered in
 
 ***
 
-## Map Stimuli (optional)
+### Map Stimuli (optional)
 This is where the stimulus is rendered onto a a surface. This can be skipped for prototyping.
 Ideally one should use [SphereMapping](/docs/SphereMapping). If SphereMapping is used, the Define display section next is necessary
 
 ***
 
-## Define display (optional)
+### Define display (optional)
 Here we define the parameters of the display system (eg. monitor). It is defined as:
 
 ![]({{ '/assets/Images/BasicWorkflow/Output_sphereSingle.PNG' | relative_url }})
