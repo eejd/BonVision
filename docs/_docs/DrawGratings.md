@@ -1,11 +1,12 @@
 ---
-title: "Docs"
+title: "DrawGratings"
 redirect_from: /docs/DrawGratings
 excerpt: "docs"
 last_modified_at: 
 author_profile: false
 ---
-## Draws parameterized 2D sinewave gratings.
+Draws parameterized 2D sinewave gratings.
+
 A BonVision primitive that draws a periodic grating stimulus over a specified region. 
 
 ## Description

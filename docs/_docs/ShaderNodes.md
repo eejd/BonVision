@@ -1,6 +1,6 @@
 ---
-title: "LogEvent"
-redirect_from: /docs/
+title: "Shader Nodes"
+redirect_from: /docs
 excerpt: "docs"
 last_modified_at: 
 author_profile: false

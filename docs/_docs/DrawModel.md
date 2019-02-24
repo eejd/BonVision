@@ -1,13 +1,12 @@
 ---
-title: "Docs"
-redirect_from: /docs/DrawModel
+title: "DrawModel"
+redirect_from: /docs/
 excerpt: "docs"
 last_modified_at: 
 author_profile: false
 ---
-## Draws a transformed 3D model stimulus
+Draws a transformed 3D model stimulus
 
-***
 ## Description
 OpenGL object 
 ### Notes

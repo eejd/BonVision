@@ -1,13 +1,15 @@
 ---
-title: "Docs"
-redirect_from: /docs/DrawQuad
+title: "DrawQuad"
+redirect_from: /docs/
 excerpt: "docs"
 last_modified_at: 
 author_profile: false
 ---
-## Draws a single axis-aligned colored quad.
+
+Draws a single axis-aligned colored quad.
+
 A BonVision primitive that draws a 2-dimensional rectangular region. 
-***
+
 ## Description
 DrawQuad as the name suggests displays a quad of specified size, at the defined location. The colour, location and size can all be controlled by the experiment.
 

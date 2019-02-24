@@ -1,6 +1,6 @@
 ---
-title: "Docs"
-redirect_from: /DrawCheckerboard
+title: "DrawCheckerboard"
+redirect_from: /docs/
 excerpt: "docs"
 last_modified_at: 
 author_profile: false

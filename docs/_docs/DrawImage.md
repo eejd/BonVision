@@ -1,13 +1,12 @@
 ---
-title: "Docs"
+title: "DrawImage"
 redirect_from: /docs/DrawImage
 excerpt: "docs"
 last_modified_at: 
 author_profile: false
 ---
-## Draws an affine transformed 2D image
+Draws an affine transformed 2D image
 
-***
 ## Description
 
 ### Notes

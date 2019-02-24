@@ -1,13 +1,15 @@
 ---
-title: "Docs"
+title: "DrawCircle"
 redirect_from: /docs/DrawCircle
 excerpt: "docs"
 last_modified_at: 
 author_profile: false
 ---
-## Draws a single colored circle.
+Draws a single colored circle.
 A BonVision primitive that draws a 2-dimensional circular/oval region. 
+
 ***
+
 ## Description
 DrawCircle displays a circle/oval of specified size, at the defined location. The colour, location and size can all be controlled by the experiment.
 

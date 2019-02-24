@@ -1,13 +1,12 @@
 ---
-title: "Docs"
-redirect_from: /docs/DrawTexturedModel
+title: "DrawTexturedModel"
+redirect_from: /docs/
 excerpt: "docs"
 last_modified_at: 
 author_profile: false
 ---
-## Draws affine transformed multi-line text using the specified style
+Draws affine transformed multi-line text using the specified style
 
-***
 ## Description
 
 
