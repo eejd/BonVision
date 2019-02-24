@@ -32,16 +32,16 @@ pages:
 
 demos:
     - title: Demos
-      url: /Demos/
+      url: /demos/demos
       children:
       - title: "Demo 2AFC"
-        url: /Demos/
+        url: /demos/demos/
       - title: "Demo Physiology"
-        url: /Demos/
+        url: /demos/demos
       - title: "Demo VR"
-        url: /Demos/
+        url: /demos/demos
       - title: "Demo AR"
-        url: /Demos/
+        url: /demos/demos
 
 docs:
     - title: Primitives
