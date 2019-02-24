@@ -65,8 +65,8 @@ docs:
         url: /docs/DrawTexturedModel/
       - title: "ParameterRange"
         url: /docs/ParameterRange/
-      - title: "PrimitiveResource"
-        url: /docs/PrimitiveResource/
+      - title: "PrimitiveResources"
+        url: /docs/PrimitiveResources/
       - title: "RangeAnimation"
         url: /docs/RangeAnimation/
     - title: "Environment"
@@ -117,4 +117,4 @@ docs:
       url: /docs/
       children:
         - title: "RenderFrame"
-          url: /docs/          
+          url: /docs/ShaderNodes          
