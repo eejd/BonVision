@@ -18,8 +18,8 @@ This loads up the basic resources (textures, etc) that would be used by BonVisio
 
 ![]({{ '/assets/Images/BasicWorkflow/BonVisionWindow.PNG' | relative_url }})
 
-This includes: CreateWindow &rarr; [PrimitiveResources](/docs/PrimitiveResources) &rarr; LoadResources
-and [RenderFrame](/docs/Shaders)
+This includes: CreateWindow &rarr; [PrimitiveResources]({{ '/docs/PrimitiveResources' | relative_url }}) &rarr; LoadResources
+and [RenderFrame]({{ '/docs/Shaders' | relative_url }})
 
 ***
 
