@@ -6,3 +6,5 @@ last_modified_at:
 author_profile: false
 ---
 ## Under Construction
+
+![]({{ '/assets/Images/DemoGIFs/basic.gif' | relative_url }})
