@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WorkflowBuilder Version="2.4.0-preview">
+  <Workflow xmlns:q1="clr-namespace:Bonsai.Vision;assembly=Bonsai.Vision" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:q2="clr-namespace:Bonsai.Vision.Drawing;assembly=Bonsai.Vision" xmlns="https://bonsai-rx.org/2018/workflow">
+    <Nodes>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="q1:FileCapture">
+          <q1:FileName>processed.avi</q1:FileName>
+          <q1:PlaybackRate>0</q1:PlaybackRate>
+          <q1:StartPosition>0</q1:StartPosition>
+          <q1:PositionUnits>Frames</q1:PositionUnits>
+          <q1:Loop>false</q1:Loop>
+          <q1:Playing>true</q1:Playing>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="Take">
+          <Count>270</Count>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="q1:FileCapture">
+          <q1:FileName>processed.avi</q1:FileName>
+          <q1:PlaybackRate>0</q1:PlaybackRate>
+          <q1:StartPosition>270</q1:StartPosition>
+          <q1:PositionUnits>Frames</q1:PositionUnits>
+          <q1:Loop>false</q1:Loop>
+          <q1:Playing>true</q1:Playing>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="Concat" />
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="q1:VideoWriter">
+            <q1:FileName>edited.avi</q1:FileName>
+            <q1:Suffix>None</q1:Suffix>
+            <q1:Buffered>true</q1:Buffered>
+            <q1:Overwrite>true</q1:Overwrite>
+            <q1:FourCC>FMP4</q1:FourCC>
+            <q1:FrameRate>10</q1:FrameRate>
+            <q1:FrameSize>
+              <q1:Width>0</q1:Width>
+              <q1:Height>0</q1:Height>
+            </q1:FrameSize>
+            <q1:ResizeInterpolation>NearestNeighbor</q1:ResizeInterpolation>
+          </Combinator>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="SkipLast">
+          <Count>2</Count>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="Slice">
+          <Start>0</Start>
+          <Step>2</Step>
+          <Stop xsi:nil="true" />
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="SelectMany">
+        <Workflow>
+          <Nodes>
+            <Expression xsi:type="WorkflowInput">
+              <Name>Source1</Name>
+            </Expression>
+            <Expression xsi:type="AsyncSubject">
+              <Name>Frame</Name>
+            </Expression>
+            <Expression xsi:type="SubscribeSubject">
+              <Name>Frame</Name>
+            </Expression>
+            <Expression xsi:type="InputMapping">
+              <PropertyMappings>
+                <Property Name="Size" Selector="Size" />
+              </PropertyMappings>
+            </Expression>
+            <Expression xsi:type="Combinator">
+              <Combinator xsi:type="q2:CreateCanvas">
+                <q2:Size>
+                  <q2:Width>1346</q2:Width>
+                  <q2:Height>1858</q2:Height>
+                </q2:Size>
+                <q2:Depth>U8</q2:Depth>
+                <q2:Channels>3</q2:Channels>
+                <q2:Color>
+                  <q2:Val0>0</q2:Val0>
+                  <q2:Val1>0</q2:Val1>
+                  <q2:Val2>0</q2:Val2>
+                  <q2:Val3>0</q2:Val3>
+                </q2:Color>
+              </Combinator>
+            </Expression>
+            <Expression xsi:type="Combinator">
+              <Combinator xsi:type="q2:AddImage">
+                <q2:Destination>
+                  <q2:X>0</q2:X>
+                  <q2:Y>0</q2:Y>
+                  <q2:Width>0</q2:Width>
+                  <q2:Height>0</q2:Height>
+                </q2:Destination>
+                <q2:Interpolation>Linear</q2:Interpolation>
+              </Combinator>
+            </Expression>
+            <Expression xsi:type="SubscribeSubject">
+              <Name>Frame</Name>
+            </Expression>
+            <Expression xsi:type="PropertyMapping">
+              <PropertyMappings>
+                <Property Name="Image" />
+              </PropertyMappings>
+            </Expression>
+            <Expression xsi:type="Combinator">
+              <Combinator xsi:type="q2:Rectangle">
+                <q2:Origin>
+                  <q2:X>0</q2:X>
+                  <q2:Y>1000</q2:Y>
+                </q2:Origin>
+                <q2:Size>
+                  <q2:Width>1346</q2:Width>
+                  <q2:Height>858</q2:Height>
+                </q2:Size>
+                <q2:Color>
+                  <q2:Val0>128</q2:Val0>
+                  <q2:Val1>128</q2:Val1>
+                  <q2:Val2>128</q2:Val2>
+                  <q2:Val3>255</q2:Val3>
+                </q2:Color>
+                <q2:Thickness>-1</q2:Thickness>
+                <q2:LineType>Connected8</q2:LineType>
+                <q2:Shift>0</q2:Shift>
+              </Combinator>
+            </Expression>
+            <Expression xsi:type="WorkflowOutput" />
+            <Expression xsi:type="Combinator">
+              <Combinator xsi:type="q2:DrawCanvas" />
+            </Expression>
+          </Nodes>
+          <Edges>
+            <Edge From="0" To="1" Label="Source1" />
+            <Edge From="2" To="3" Label="Source1" />
+            <Edge From="3" To="4" Label="Source1" />
+            <Edge From="4" To="5" Label="Source1" />
+            <Edge From="5" To="8" Label="Source1" />
+            <Edge From="6" To="7" Label="Source1" />
+            <Edge From="7" To="5" Label="Source2" />
+            <Edge From="8" To="10" Label="Source1" />
+            <Edge From="10" To="9" Label="Source1" />
+          </Edges>
+        </Workflow>
+      </Expression>
+    </Nodes>
+    <Edges>
+      <Edge From="0" To="7" Label="Source1" />
+      <Edge From="1" To="3" Label="Source1" />
+      <Edge From="2" To="3" Label="Source2" />
+      <Edge From="3" To="5" Label="Source1" />
+      <Edge From="5" To="6" Label="Source1" />
+      <Edge From="6" To="4" Label="Source1" />
+      <Edge From="7" To="1" Label="Source1" />
+    </Edges>
+  </Workflow>
+  <ExtensionTypes>
+    <Type>Bonsai.Vision.FileCapture, Bonsai.Vision, Version=2.4.0.0, Culture=neutral, PublicKeyToken=null</Type>
+    <Type>Bonsai.Reactive.Take, Bonsai.Core, Version=2.4.0.0, Culture=neutral, PublicKeyToken=null</Type>
+    <Type>Bonsai.Reactive.Concat, Bonsai.Core, Version=2.4.0.0, Culture=neutral, PublicKeyToken=null</Type>
+    <Type>Bonsai.Vision.VideoWriter, Bonsai.Vision, Version=2.4.0.0, Culture=neutral, PublicKeyToken=null</Type>
+    <Type>Bonsai.Reactive.SkipLast, Bonsai.Core, Version=2.4.0.0, Culture=neutral, PublicKeyToken=null</Type>
+    <Type>Bonsai.Reactive.Slice, Bonsai.Core, Version=2.4.0.0, Culture=neutral, PublicKeyToken=null</Type>
+    <Type>Bonsai.Expressions.AsyncSubjectBuilder, Bonsai.Core, Version=2.4.0.0, Culture=neutral, PublicKeyToken=null</Type>
+    <Type>Bonsai.Vision.Drawing.CreateCanvas, Bonsai.Vision, Version=2.4.0.0, Culture=neutral, PublicKeyToken=null</Type>
+    <Type>Bonsai.Vision.Drawing.AddImage, Bonsai.Vision, Version=2.4.0.0, Culture=neutral, PublicKeyToken=null</Type>
+    <Type>Bonsai.Vision.Drawing.Rectangle, Bonsai.Vision, Version=2.4.0.0, Culture=neutral, PublicKeyToken=null</Type>
+    <Type>Bonsai.Vision.Drawing.DrawCanvas, Bonsai.Vision, Version=2.4.0.0, Culture=neutral, PublicKeyToken=null</Type>
+  </ExtensionTypes>
+</WorkflowBuilder>

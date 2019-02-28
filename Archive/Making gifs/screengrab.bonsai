@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WorkflowBuilder Version="2.4.0-preview">
+  <Workflow xmlns:q1="clr-namespace:Bonsai.Video;assembly=Bonsai.Video" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:q2="clr-namespace:Bonsai.Windows.Input;assembly=Bonsai.Windows.Input" xmlns:q3="clr-namespace:Bonsai.Vision;assembly=Bonsai.Vision" xmlns="https://bonsai-rx.org/2018/workflow">
+    <Nodes>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="q1:ScreenCaptureStream">
+          <q1:HideCursor>false</q1:HideCursor>
+          <q1:CaptureRegion>
+            <q1:X>0</q1:X>
+            <q1:Y>0</q1:Y>
+            <q1:Width>0</q1:Width>
+            <q1:Height>0</q1:Height>
+          </q1:CaptureRegion>
+          <q1:FrameInterval>100</q1:FrameInterval>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="TakeUntil" />
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="q2:KeyDown">
+          <q2:Filter>F9</q2:Filter>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="q3:VideoWriter">
+          <q3:FileName>capture.avi</q3:FileName>
+          <q3:Suffix>None</q3:Suffix>
+          <q3:Buffered>true</q3:Buffered>
+          <q3:Overwrite>true</q3:Overwrite>
+          <q3:FourCC>FMP4</q3:FourCC>
+          <q3:FrameRate>10</q3:FrameRate>
+          <q3:FrameSize>
+            <q3:Width>0</q3:Width>
+            <q3:Height>0</q3:Height>
+          </q3:FrameSize>
+          <q3:ResizeInterpolation>NearestNeighbor</q3:ResizeInterpolation>
+        </Combinator>
+      </Expression>
+    </Nodes>
+    <Edges>
+      <Edge From="0" To="3" Label="Source1" />
+      <Edge From="2" To="1" Label="Source2" />
+      <Edge From="3" To="1" Label="Source1" />
+    </Edges>
+  </Workflow>
+  <ExtensionTypes>
+    <Type>Bonsai.Video.ScreenCaptureStream, Bonsai.Video, Version=2.2.0.0, Culture=neutral, PublicKeyToken=null</Type>
+    <Type>Bonsai.Reactive.TakeUntil, Bonsai.Core, Version=2.4.0.0, Culture=neutral, PublicKeyToken=null</Type>
+    <Type>Bonsai.Windows.Input.KeyDown, Bonsai.Windows.Input, Version=2.2.0.0, Culture=neutral, PublicKeyToken=null</Type>
+    <Type>Bonsai.Vision.VideoWriter, Bonsai.Vision, Version=2.4.0.0, Culture=neutral, PublicKeyToken=null</Type>
+  </ExtensionTypes>
+</WorkflowBuilder>
