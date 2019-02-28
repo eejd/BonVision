@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WorkflowBuilder Version="2.4.0-preview">
+  <Workflow xmlns:q1="clr-namespace:Bonsai.Shaders;assembly=Bonsai.Shaders" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:q2="clr-namespace:Bonsai.Vision;assembly=Bonsai.Vision" xmlns="https://bonsai-rx.org/2018/workflow">
+    <Nodes>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="q1:CreateWindow">
+          <q1:Width>640</q1:Width>
+          <q1:Height>480</q1:Height>
+          <q1:VSync>On</q1:VSync>
+          <q1:SwapSync>false</q1:SwapSync>
+          <q1:ClearColor>Black</q1:ClearColor>
+          <q1:ClearMask>DepthBufferBit ColorBufferBit</q1:ClearMask>
+          <q1:CursorVisible>true</q1:CursorVisible>
+          <q1:Location xsi:nil="true" />
+          <q1:WindowBorder>Resizable</q1:WindowBorder>
+          <q1:WindowState>Normal</q1:WindowState>
+          <q1:DisplayDevice>Primary</q1:DisplayDevice>
+          <q1:TargetRenderFrequency>0</q1:TargetRenderFrequency>
+          <q1:RenderState />
+          <q1:GraphicsMode>
+            <q1:ColorFormat>
+              <q1:Red>8</q1:Red>
+              <q1:Green>8</q1:Green>
+              <q1:Blue>8</q1:Blue>
+              <q1:Alpha>8</q1:Alpha>
+            </q1:ColorFormat>
+            <q1:Depth>16</q1:Depth>
+            <q1:Stencil>0</q1:Stencil>
+            <q1:Samples>0</q1:Samples>
+            <q1:AccumulatorFormat>
+              <q1:Red>0</q1:Red>
+              <q1:Green>0</q1:Green>
+              <q1:Blue>0</q1:Blue>
+              <q1:Alpha>0</q1:Alpha>
+            </q1:AccumulatorFormat>
+            <q1:Buffers>2</q1:Buffers>
+            <q1:Stereo>false</q1:Stereo>
+          </q1:GraphicsMode>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="q1:LoadResources" />
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="q1:RenderFrame" />
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="q1:TextureResources">
+          <q1:Textures>
+            <q1:TextureConfiguration xsi:type="q1:Texture2D">
+              <q1:Name>DynamicVideo</q1:Name>
+              <q1:Width xsi:nil="true" />
+              <q1:Height xsi:nil="true" />
+              <q1:InternalFormat>Rgba</q1:InternalFormat>
+              <q1:WrapS>Repeat</q1:WrapS>
+              <q1:WrapT>Repeat</q1:WrapT>
+              <q1:MinFilter>Linear</q1:MinFilter>
+              <q1:MagFilter>Linear</q1:MagFilter>
+            </q1:TextureConfiguration>
+          </q1:Textures>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="q2:CameraCapture">
+          <q2:Index>0</q2:Index>
+          <q2:CaptureProperties />
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="q1:UpdateTexture">
+          <q1:TextureName>DynamicVideo</q1:TextureName>
+          <q1:TextureTarget>Texture2D</q1:TextureTarget>
+          <q1:InternalFormat>Rgba</q1:InternalFormat>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="q2:Flip">
+          <q2:Mode>Vertical</q2:Mode>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.PrimitiveResources.bonsai" />
+      <Expression xsi:type="IncludeWorkflow" Path="BonVision:Environment.NormalizedViewport.bonsai" />
+      <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawImage.bonsai">
+        <Angle>0</Angle>
+        <TextureName>DynamicVideo</TextureName>
+        <ExtentX>1</ExtentX>
+        <ExtentY>1</ExtentY>
+        <LocationX>0</LocationX>
+        <LocationY>0</LocationY>
+        <ShiftX>0</ShiftX>
+        <ShiftY>0</ShiftY>
+      </Expression>
+    </Nodes>
+    <Edges>
+      <Edge From="0" To="7" Label="Source1" />
+      <Edge From="2" To="8" Label="Source1" />
+      <Edge From="3" To="1" Label="Source1" />
+      <Edge From="4" To="6" Label="Source1" />
+      <Edge From="6" To="5" Label="Source1" />
+      <Edge From="7" To="3" Label="Source1" />
+      <Edge From="8" To="9" Label="Source1" />
+    </Edges>
+  </Workflow>
+  <ExtensionTypes>
+    <Type>Bonsai.Shaders.CreateWindow, Bonsai.Shaders, Version=0.19.0.0, Culture=neutral, PublicKeyToken=null</Type>
+    <Type>Bonsai.Shaders.LoadResources, Bonsai.Shaders, Version=0.19.0.0, Culture=neutral, PublicKeyToken=null</Type>
+    <Type>Bonsai.Shaders.RenderFrame, Bonsai.Shaders, Version=0.19.0.0, Culture=neutral, PublicKeyToken=null</Type>
+    <Type>Bonsai.Shaders.TextureResources, Bonsai.Shaders, Version=0.19.0.0, Culture=neutral, PublicKeyToken=null</Type>
+    <Type>Bonsai.Vision.CameraCapture, Bonsai.Vision, Version=2.4.0.0, Culture=neutral, PublicKeyToken=null</Type>
+    <Type>Bonsai.Shaders.UpdateTexture, Bonsai.Shaders, Version=0.19.0.0, Culture=neutral, PublicKeyToken=null</Type>
+    <Type>Bonsai.Vision.Flip, Bonsai.Vision, Version=2.4.0.0, Culture=neutral, PublicKeyToken=null</Type>
+  </ExtensionTypes>
+</WorkflowBuilder>
