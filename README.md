@@ -1,4 +1,4 @@
-# [BonVision website](https://amansaleem.github.io/BonVision/)
+# [BonVision website](https://bonvision.github.io/)
 
 
 MIT License
