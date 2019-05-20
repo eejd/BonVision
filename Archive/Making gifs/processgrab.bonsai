@@ -15,29 +15,27 @@
       <Expression xsi:type="Combinator">
         <Combinator xsi:type="q1:Crop">
           <q1:RegionOfInterest>
-            <q1:X>10</q1:X>
-            <q1:Y>1</q1:Y>
-            <q1:Width>1346</q1:Width>
-            <q1:Height>1858</q1:Height>
+            <q1:X>964</q1:X>
+            <q1:Y>482</q1:Y>
+            <q1:Width>632</q1:Width>
+            <q1:Height>476</q1:Height>
           </q1:RegionOfInterest>
         </Combinator>
       </Expression>
-      <Expression xsi:type="Disable">
-        <Builder xsi:type="Combinator">
-          <Combinator xsi:type="q1:VideoWriter">
-            <q1:FileName>processed.avi</q1:FileName>
-            <q1:Suffix>None</q1:Suffix>
-            <q1:Buffered>true</q1:Buffered>
-            <q1:Overwrite>true</q1:Overwrite>
-            <q1:FourCC>FMP4</q1:FourCC>
-            <q1:FrameRate>10</q1:FrameRate>
-            <q1:FrameSize>
-              <q1:Width>0</q1:Width>
-              <q1:Height>0</q1:Height>
-            </q1:FrameSize>
-            <q1:ResizeInterpolation>NearestNeighbor</q1:ResizeInterpolation>
-          </Combinator>
-        </Builder>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="q1:VideoWriter">
+          <q1:FileName>processed2.avi</q1:FileName>
+          <q1:Suffix>None</q1:Suffix>
+          <q1:Buffered>true</q1:Buffered>
+          <q1:Overwrite>true</q1:Overwrite>
+          <q1:FourCC>FMP4</q1:FourCC>
+          <q1:FrameRate>10</q1:FrameRate>
+          <q1:FrameSize>
+            <q1:Width>0</q1:Width>
+            <q1:Height>0</q1:Height>
+          </q1:FrameSize>
+          <q1:ResizeInterpolation>NearestNeighbor</q1:ResizeInterpolation>
+        </Combinator>
       </Expression>
       <Expression xsi:type="Disable">
         <Builder xsi:type="Combinator">
